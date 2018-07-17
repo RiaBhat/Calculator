@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+  >
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Welcome!!!!!!
+
+                      This is different from other calculators.  You can save all your formulas and get access to them anu time"
+        android:layout_centerInParent="true"
+        android:textAppearance="?android:textAppearance"
+        android:textColor="@color/Background"
+        android:background="@color/Black"
+        />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Ready For Mathematical world!"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/Background"
+        />
+    <Button
+        android:id="@+id/Next1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="About the app and developer"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/Background"
+        />
+
+</RelativeLayout>

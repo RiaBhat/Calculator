@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Background">
+
+        <EditText
+            android:id="@+id/Screen"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:layout_below="@+id/formula"
+            android:layout_marginTop="20dp"
+            android:hint="INPUT 1"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/Screen2"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:layout_below="@+id/Screen"
+            android:layout_marginTop="10dp"
+            android:hint="INPUT 2"
+            android:inputType="number"
+            />
+
+        <Button
+            android:id="@+id/equal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/Screen2"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Screen2"
+            android:layout_toRightOf="@+id/equal"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Screen2"
+            android:layout_toRightOf="@+id/plus"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/equal"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/lbrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plus"
+            android:layout_toRightOf="@id/multiply"
+            android:text="(" />
+
+        <Button
+            android:id="@+id/rbrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/minus"
+            android:layout_toRightOf="@+id/lbrack"
+            android:text=")" />
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/multiply"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/remainder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbrack"
+            android:layout_toRightOf="@+id/divide"
+            android:text="%" />
+
+        <Button
+            android:id="@+id/fact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbrack"
+            android:layout_toRightOf="@id/remainder"
+            android:text="!" />
+
+        <Button
+            android:id="@+id/sqrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Screen2"
+            android:layout_toRightOf="@+id/minus"
+            android:text="sqrt" />
+
+        <Button
+            android:id="@+id/square"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sqrt"
+            android:layout_toRightOf="@+id/rbrack"
+            android:text="^2" />
+
+        <Button
+            android:id="@+id/cube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/square"
+            android:layout_toRightOf="@+id/fact"
+            android:text="^3" />
+
+        <Button
+            android:id="@+id/cbrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/divide"
+            android:text="cbrt" />
+
+        <Button
+            android:id="@+id/clr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/remainder"
+            android:layout_toRightOf="@+id/cbrt"
+            android:text="clr" />
+
+
+        <Button
+            android:id="@+id/formula"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="memory" />
+
+    </RelativeLayout>
