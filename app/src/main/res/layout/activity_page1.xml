@@ -5,19 +5,6 @@
     android:background="@color/Background"
   >
 
-    <TextView
-        android:id="@+id/Welcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Welcome!!!!!!
-
-                      This is different from other calculators.  You can save all your formulas and get access to them anu time"
-        android:layout_centerInParent="true"
-        android:textAppearance="?android:textAppearance"
-        android:textColor="@color/Background"
-        android:background="@color/Black"
-        />
-
     <Button
         android:id="@+id/Next"
         android:layout_width="wrap_content"
@@ -38,5 +25,72 @@
         android:textColor="@color/colorPrimaryDark"
         android:background="@color/Background"
         />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Next1"
+        android:layout_alignRight="@+id/Next1"
+        android:layout_below="@+id/Next1"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Username-" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignStart="@+id/username"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password-" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="21dp"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/register"
+        android:layout_alignBottom="@+id/register"
+        android:layout_alignEnd="@+id/password"
+        android:layout_alignRight="@+id/password"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/login"
+        android:layout_alignBottom="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:text="OR"
+        android:textColor="@color/Black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignStart="@+id/username"
+        android:layout_below="@+id/Next1"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email-" />
 
 </RelativeLayout>
